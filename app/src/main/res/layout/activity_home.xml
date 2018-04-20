@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/home_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/home_vertical_margin"
+                android:paddingLeft="@dimen/home_horizontal_margin"
+                android:paddingRight="@dimen/home_horizontal_margin"
+                android:background="@color/loginPrimaryDark"
+                tools:context="me.clonalejandro.clonasister.Manager">
+
+    <!-- LOGO -->
+    <ImageView android:id="@+id/home_logo"
+               style="@style/homeImage"
+               tools:ignore="ContentDescription"/>
+
+    <TextView android:id="@+id/mainTitle"
+              style="@style/titleLogin"
+              android:layout_below="@id/home_logo"
+              android:text="@string/title"/>
+
+    <!-- INPUTS -->
+    <EditText android:id="@+id/user_field"
+              style="@style/fieldLogin"
+              android:inputType="textEmailAddress"
+              android:layout_below="@id/mainTitle"
+              android:drawableStart="@drawable/ic_person_white"
+              android:drawablePadding="10dp"
+              android:hint="@string/login_user"
+              tools:ignore="LabelFor"/>
+
+    <EditText android:id="@+id/password_field"
+              style="@style/fieldLogin"
+              android:inputType="textPassword"
+              android:layout_below="@id/user_field"
+              android:drawableStart="@drawable/ic_lock_white"
+              android:drawablePadding="10dp"
+              android:hint="@string/login_pwd"
+              tools:ignore="Deprecated,LabelFor"/>
+
+
+    <!-- SUBMIT -->
+    <Button android:id="@+id/home_button"
+            style="@style/buttonLogin"
+            android:text="@string/login_button"/>
+
+    <TextView android:id="@+id/helper"
+              style="@style/textviewLogin"
+              android:layout_below="@id/home_button"
+              android:text="@string/login_helper"/>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/splash_layout"
+                android:paddingTop="@dimen/home_vertical_margin"
+                android:paddingBottom="@dimen/splash_bottom"
+                android:paddingLeft="@dimen/home_horizontal_margin"
+                android:paddingRight="@dimen/home_horizontal_margin"
+                android:background="@drawable/gradients"
+                tools:context="me.clonalejandro.clonasister.Home">
+
+    <!-- BRAND -->
+    <ImageView
+        android:id="@+id/imageLogo"
+        style="@style/splashImage"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/helper"
+        style="@style/textviewSplash"
+        android:layout_below="@id/imageLogo"
+        android:text="@string/app_name"/>
+
+
+    <!-- FOOTER -->
+    <Button android:id="@+id/splashBtn"
+            style="@style/splashButton"
+            android:text="@string/splash_button_text"/>
+
+</RelativeLayout>

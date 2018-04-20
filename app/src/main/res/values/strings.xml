@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ClonaSister</string>
+    <string name="title">ClonaSister</string>
+    <string name="login_user">Username</string>
+    <string name="login_pwd">••••••••</string>
+    <string name="login_button">Log In</string>
+    <string name="login_helper">You don´t have a license?</string>
+
+    <string name="error_email">Your email is incorrectly</string>
+    <string name="error_license">Your license is incorrectly</string>
+    <string name="error_form">The form have an error in this fields</string>
+
+    <string name="splash_button_text">Continue process</string>
+
+    <string name="settings_label_wifi">Wi-Fi</string>
+    <string name="settings_label_bluetooth">Bluetooth</string>
+    <string name="settings_switch_enabled">Enabled</string>
+    <string name="settings_switch_disabled">Disabled</string>
+
+    <string name="ticker_text">Checking your phone…</string>
+</resources>

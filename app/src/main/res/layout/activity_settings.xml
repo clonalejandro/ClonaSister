@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/settings_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/home_vertical_margin"
+                android:paddingLeft="@dimen/home_horizontal_margin"
+                android:paddingRight="@dimen/home_horizontal_margin"
+                android:background="@color/loginPrimaryDark"
+                tools:context="me.clonalejandro.clonasister.Settings">
+
+    <!-- LOGO -->
+    <ImageView android:id="@+id/home_logo"
+               style="@style/homeImage"
+               tools:ignore="ContentDescription"/>
+
+    <TextView android:id="@+id/mainTitle"
+              style="@style/titleLogin"
+              android:layout_below="@id/home_logo"
+              android:text="@string/title"/>
+
+    <!-- WIFI CONTAINER -->
+    <LinearLayout android:id="@+id/container_wifi"
+                  style="@style/settingsContainer"
+                  android:layout_marginTop="280dp">
+
+        <TextView android:id="@+id/settings_label_wifi"
+                  style="@style/settingsLabel"
+                  android:text="@string/settings_label_wifi"
+                  android:labelFor="@id/settings_switch_wifi"
+                  tools:ignore="RtlSymmetry"/>
+
+        <Switch android:id="@+id/settings_switch_wifi"
+                style="@style/settingsSwitch"/>
+    </LinearLayout>
+
+    <!-- BLUETOOTH CONTAINER -->
+    <LinearLayout android:id="@+id/container_bluetooth"
+                  style="@style/settingsContainer"
+                  android:layout_below="@id/container_wifi">
+
+        <TextView android:id="@+id/settings_label_bluetooth"
+                  style="@style/settingsLabel"
+                  android:text="@string/settings_label_bluetooth"/>
+
+        <Switch android:id="@+id/settings_switch_bluetooth"
+                style="@style/settingsSwitch"/>
+    </LinearLayout>
+
+</RelativeLayout>

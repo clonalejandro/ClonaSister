@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="loginPrimary">#FDFDFE</color>
+    <color name="loginPrimaryDark">#353E4F</color>
+
+    <color name="red">#fa5252</color>
+    <color name="green">#51cf66</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="switchBlue">#46bdbf</color>
+    <color name="switchWhite">#f1f1f1</color>
+    <color name="switchBlack">#42221f1f</color>
+</resources>
