@@ -1,2 +1,2 @@
 # ClonaSister
-A personal app
+A personal app (parental control)
